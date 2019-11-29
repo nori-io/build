@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /plugins
+go mod download
+go build -buildmode=plugin -o /plugins/plugin.so /plugins/plugin.go

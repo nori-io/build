@@ -1,7 +1,8 @@
 #!/bin/bash
+cd /plugins
+
 if [[ "$build_mode" == "single" ]]; then
 echo "SINGLE"
-cd /plugins
 go mod download
 go build -buildmode=plugin -o /plugins/plugin.so /plugins/plugin.go
 fi
@@ -9,7 +10,6 @@ fi
 
 if [[ "$build_mode" == "group" ]]; then
 echo "GROUP"
-cd /plugins
 ls
 for directory in `find /plugins -mindepth 1 -maxdepth 1  -type d `
 do

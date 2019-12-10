@@ -8,8 +8,8 @@ go build -buildmode=plugin -o /plugins/plugin.so /plugins/plugin.go
 fi
 
 
-if [[ "$build_mode" == "group" ]]; then
-echo "GROUP"
+if [[ "$build_mode" == "bulk" ]]; then
+echo "BULK"
 ls
 for directory in `find /plugins -mindepth 1 -maxdepth 1  -type d `
 do

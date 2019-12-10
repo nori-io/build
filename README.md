@@ -10,11 +10,11 @@ Folder [plugins](.) contains [Dockerfile](./Dockerfile) and bashfile [build.sh] 
 execute command into folder [nori-io/build/plugins/]
 
 1) docker build -t "plugins" .  -f Dockerfile
-2) docker run --rm --name "plugins_container" -e build_mode="group" -v /home/anita/.config/nori/plugins:/plugins plugins
+2) docker run --rm --name "plugins_container" -e build_mode="bulk" -v /home/anita/.config/nori/plugins:/plugins plugins
 
 build_mode can be used:
  "single" - build only one plugin, located in directory with plugins
- "group" -  build some plugins, located in subdirectories in directory with plugins
+ "bulk" -  build some plugins, located in subdirectories in directory with plugins
 
 ## Build "Nori" engine in Docker container 
 

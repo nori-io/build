@@ -5,10 +5,10 @@ ENV APP_ENV="${build_mode}"
 
 WORKDIR /app
 
-COPY build ./
+COPY ./build/0.1.0/scripts/build.sh ./
 
-RUN chmod +x ./build
+RUN chmod +x ./build.sh
 
 VOLUME /plugins
 
-CMD ["./build"]
+CMD ["/app/build.sh"]

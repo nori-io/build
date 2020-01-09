@@ -5,7 +5,7 @@ for support cross platform development and using.
 
 ## Build plugins in Docker container 
 
-Folder [plugins](.) contains [Dockerfile](./Dockerfile) and bashfile [build.sh] to build plugins inside Docker container.
+Folder [plugins](.) contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [build.sh] to build plugins inside Docker container.
 
 execute command into folder [nori-io/build/plugins/]
 
@@ -15,16 +15,6 @@ execute command into folder [nori-io/build/plugins/]
 build_mode can be used:
  "single" - build only one plugin, located in directory with plugins
  "bulk" -  build some plugins, located in subdirectories in directory with plugins
-
-## Build "Nori" engine in Docker container 
-
-Folder [nori](.) contains [Dockerfile](./Dockerfile) to build "Nori" engine inside Docker container.
-
-execute command into folder with "Nori" engine
-
-1) docker build -t "nori" .  -f build/Dockerfile
-
-2) docker run --name "nori_engine_container"  -v [host directory with plugins]:/plugins nori
 
 ## Dependencies
 

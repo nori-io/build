@@ -1,10 +1,10 @@
 # Nori Plugin Builder Makefile
 
 DOCKER_IMAGE ?= noriio/builder
-DOCKER_TAG ?= 0.1.0
+DOCKER_TAG ?= 0.2.0
 
 docker-image: ## build noriio/builder docker image
-	docker build -f build/0.1.0/Dockerfile -t ${DOCKER_IMAGE}:${DOCKER_TAG} .
+	docker build -f build/0.2.0/Dockerfile -t ${DOCKER_IMAGE}:${DOCKER_TAG} .
 .PHONY: docker-image
 
 docker-push: ## push docker image to registry

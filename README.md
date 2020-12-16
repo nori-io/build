@@ -7,7 +7,7 @@ for support cross platform development and using.
 
 Folder [builder](.) contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [build.sh](build/0.2.0/scripts/build.sh) to build plugins inside Docker container.
 
-execute command into folder [nori-io/build/plugins/]
+execute command into folder [build/0.2.0/]
 
 1) docker build -t "noriio/builder" .  -f Dockerfile
 2) docker run --rm --name "plugins_container" -v /home/anita/.config/nori/plugins:/plugin noriio/builder

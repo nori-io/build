@@ -19,7 +19,7 @@ execute command into folder (builder)(.)
 ## Support
 
 If you have problems with building "Nori" engine or plugins inside Docker container you 
-should write to info@nori.io or create [discussion] in this repository.
+should write to info@nori.io or create [discussion](https://github.com/nori-io/builder/issues) in this repository.
 
 
 

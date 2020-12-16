@@ -9,12 +9,8 @@ Folder [builder](.) contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [
 
 execute command into folder [nori-io/build/plugins/]
 
-1) docker build -t "plugins" .  -f Dockerfile
-2) docker run --rm --name "plugins_container" -e build_mode="bulk" -v /home/anita/.config/nori/plugins:/plugins plugins
-
-build_mode can be used:
- "single" - build only one plugin, located in directory with plugins
- "bulk" -  build some plugins, located in subdirectories in directory with plugins
+1) docker build -t "noriio/builder" .  -f Dockerfile
+2) docker run --rm --name "plugins_container" -v /home/anita/.config/nori/plugins:/plugin noriio/builder
 
 ## Dependencies
 

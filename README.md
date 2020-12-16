@@ -5,7 +5,7 @@ for support cross platform development and using.
 
 ## Build plugins in Docker container 
 
-Folder [builder]() contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [build.sh](build/0.2.0/scripts/build.sh) to build plugins inside Docker container.
+Folder [builder](.) contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [build.sh](build/0.2.0/scripts/build.sh) to build plugins inside Docker container.
 
 execute command into folder [build/0.2.0/](build/0.2.0/)
 

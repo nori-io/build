@@ -1,7 +1,6 @@
 #!/bin/bash
-cd /plugin
-
+cd /src
 go mod download
-go build -buildmode=plugin -o plugin.so plugin/main.go
+go build -buildmode=plugin -o /src/plugin.so /src/plugin/main.go
 
 

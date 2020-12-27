@@ -3,18 +3,21 @@
 There are dockerfiles and bashfile for build "Nori" engine and plugins in docker containers
 for support cross platform development and using.
 
-## Build plugins in Docker container 
+## Build docker image
 
-Repository contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [build.sh](build/0.2.0/scripts/build.sh) to build plugins inside Docker container.
+```bash
+docker build -t noriio/builder:dev .  -f build/Dockerfile
+```
 
-execute command into folder (builder)(.)
+## Build plugins in docker container 
 
-1) docker build -t "noriio/builder" .  -f build/0.2.0/Dockerfile
-2) docker run --rm --name "plugins_container" -v /home/nori/plugins:/plugin noriio/builder
+Repository contains [Dockerfile](build/Dockerfile) and bashfile [build.sh](build/scripts/build.sh) to build plugin inside Docker container.
 
-## Dependencies
+Run command in plugin root directory:
 
-"Nori" engine and plugins was build by using Docker Client: Docker Engine - Community, Version:19.03.5
+```bash
+docker run --rm -v /home/nori/plugins:/src noriio/builder:dev
+```
 
 ## Support
 

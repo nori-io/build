@@ -10,7 +10,7 @@ Repository contains [Dockerfile](build/0.2.0/Dockerfile) and bashfile [build.sh]
 execute command into folder (builder)(.)
 
 1) docker build -t "noriio/builder" .  -f build/0.2.0/Dockerfile
-2) docker run --rm --name "plugins_container" -v /home/anita/.config/nori/plugins:/plugin noriio/builder
+2) docker run --rm --name "plugins_container" -v /home/nori/plugins:/plugin noriio/builder
 
 ## Dependencies
 

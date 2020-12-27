@@ -9,7 +9,7 @@ for support cross platform development and using.
 docker build -t noriio/builder:dev .  -f build/Dockerfile
 ```
 
-## Build plugins in Docker container 
+## Build plugins in docker container 
 
 Repository contains [Dockerfile](build/Dockerfile) and bashfile [build.sh](build/scripts/build.sh) to build plugin inside Docker container.
 

@@ -3,7 +3,7 @@ name: Docker Image Publication
 on:
   push:
     branches:
-      - '**'
+      - 'dev'
     tags:
       - 'v*.*.*'
   pull_request:
